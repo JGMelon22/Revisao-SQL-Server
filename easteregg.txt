@@ -1,0 +1,9 @@
+Bons estudos, mano Henrique :D
+
+- Recomendação de livro para SQL Server:
+• Introducing Microsoft SQL Server 2019;
+• Microsoft SQL Server 2019 A Beginner's Guide (7a edição).
+
+- Ferramentas bacanas:
+• Azure Data Studio;
+• DBeaver.
