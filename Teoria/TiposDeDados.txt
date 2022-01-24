@@ -1,0 +1,28 @@
+-- Tipos de dados 
+
+* 1- Booleanos
+* 2- Caracteres
+* 3- Números
+* 4- Temporais
+ 
+ 
+ # 1. Booleano
+ -- Recebe 1 ou zero (verdadeiro ou falso), representado geralmente por "bit";
+ 
+ # 2. Caracteres
+ -- Tamanho fixo --> char/nchar
+ -- Tamanha variável --> varchar/nvarchar
+ 
+ # 3. Números
+ -- tinyint/smallint/int/bigint --> Inteiros 
+ -- Numeric/decimal --> Números reais com precisaão de escala. Recomendando para dinheiro
+ 
+ # Valores reais
+ -- real/float/double --> Números com ponto flutuante, apenas mudando a precisão.
+ 
+ # 4. Temporais
+ -- date --> Armazena a data no formato yyyy-mm-dd
+ -- datetime --> Similar ao date, yyyy-mm-dd hh:MM:ss
+ -- datetime2 --> Similar ao datetime, mas adiciona os milisegundos
+ -- smalldatetime --> Similar ao date, porém seu limite é de 1900-01-01 00:00:00 até 2079:06:06 23:59:59
+ -- datetimeoffset --> Permite armazenar o fuso horário

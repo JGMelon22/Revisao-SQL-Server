@@ -1,0 +1,25 @@
+-- Chave primária e estrangeira
+
+# Chave primária
+
+* Uma chave primária, ou simplemente "PK", é uma coluna ou grupo de colunas, usadapara identificar unicamente uma linha de uma tabela;
+* É possível criarmos essas chavaes através de constraints, que são regras as quais você define quando está criando uma coluna;
+* Desta forma, você cria um índice único para aquela coluna ou grupo de colunas.
+
+-- Como criar uma PK?
+CREATE TABLE nomeDaTabela
+(nomeDaColuna tipoDeDados PRIMARY KEY,
+ nomeDaColuna tipoDeDados ... );
+ 
+# Chave estrangeira (FK)
+
+* É uma coluna ou um grupo de colunas em uma tabela que identifica unicamente uma linha em outra tabela;
+* Em outras palavras: é definida em uma tabela onde será apenas uma referência e não contendo todos os dados ali;
+* Simplificando: uma FK é uma coluna ou grupo de colunas que é uma chave primária em outra tabela.
+* A tabelaque contem a FK é chamada de tabela filho e a que contem a PK de tabela pai;
+* Importante: uma tabela pode conter mais de uma FK, isso vai depender do seu relacionamento com as outras tabela.
+
+-- Como criar uma FK?
+CREATE TABLE nomeDaTabela
+(nomeDaColuna tipoDeDados,
+ nomeDaColuna foreign key references nomeDatabela(nomeDaColuna);
