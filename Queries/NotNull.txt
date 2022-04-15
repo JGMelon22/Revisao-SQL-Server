@@ -1,0 +1,26 @@
+/* NOT NULL CONSTRAINT */
+
+-- BARRA O USUÁRIO DE FAZER UM INPUT SEM INSERIR UM VALOR
+
+-- TABELA DE TESTES
+CREATE TABLE ProcessadoresEntrada
+(
+	Fabricante VARCHAR(50) NOT NULL,
+	NumerosNucleos INT DEFAULT 1,
+	NumerosThreads INT DEFAULT 1,
+	TDP DECIMAL CHECK (TDP > 0 AND TDP <= 65)
+);
+
+-- POPULANDO E TESTANDO A "TRAVAS"
+INSERT INTO ProcessadoresEntrada
+(Fabricante, NumerosNucleos, NumerosThreads, TDP)
+VALUES('Intel', 2, 4, 35),
+      ('AMD', 2, 4, 35); 
+
+-- Concatenando o W para o TDP 
+SELECT 
+	Fabricante, 
+	NumerosNucleos AS 'Cores',
+	NumerosThreads AS 'Threads',
+	CONCAT(TDP, ' W') AS 'TDP'
+FROM ProcessadoresEntrada;
