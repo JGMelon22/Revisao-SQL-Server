@@ -1,0 +1,8 @@
+# Principais restrições ao utilizar o CREATE TABLE
+
+-- NOT NULL --> Não permite nulos;
+-- UNIQUE --> Força que os todos os valores de uma determinada coluna sejam distintos;
+-- PRIMARY KEY --> Uma junção do NOT NULL com UNIQUE. Exemplo: uma pessoa pode ter o nome João, mas o seu CPF é único e o que identifica ele;
+-- FOREIGN KEY --> Identifica unicamente uma linha em outra tabela;
+-- CHECK --> Verifica se uma coluna poussui uma condição específica, referência: https://docs.microsoft.com/en-us/sql/relational-databases/tables/create-check-constraints?view=sql-server-ver15
+-- DEFAULT --> Especifica um valor padrão para um campo. Por exemplo: digamos que um campo chamado "SEXO" não tenha sido preenchido com 'M', 'F' ou 'O' (outro), um valor padrão será colocado ali como 'N' de "não informado".
