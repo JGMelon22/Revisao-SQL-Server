@@ -1,0 +1,6 @@
+/* UNIQUE Constraint */
+
+-- Principais diferenças entre um 'unique' para uma 'PK'
+
+* Unique pode ou não ser nulo;
+* Pode haver mais de um campo unique na tabela.

@@ -1,0 +1,17 @@
+/* UNIQUE Constraint */
+
+-- TABELA EXEMPLO
+CREATE TABLE CNH
+(
+	Id INT NOT NULL,
+	Nome VARCHAR(100) NOT NULL,
+	Idade INT CHECK(Idade >= 18),
+	CodigoCNH INT NOT NULL UNIQUE,
+	CPFCondutor INT NOT NULL UNIQUE
+);
+
+-- POPULANDO
+INSERT INTO CNH
+(Id, Nome, Idade, CodigoCNH, CPFCondutor)
+VALUES(1, 'John Doe', 19, 123456, 26716),
+      (2, 'Lula Molusco', 56, 915670, 16726);
