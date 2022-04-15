@@ -1,0 +1,12 @@
+# Formas de se fazer um inserção
+
+-- Tradicional:
+
+INSERT INTO NomeTabela(colunaUm, colunaDois...)
+VALUES(valorUm, valorDois...);
+
+# Inserindos dados em uma tabela nova provenientes de uma já existente:
+
+INSERT INTO NomeTabela1(colunaUm)
+SELECT colunaDois
+FROM TabelaB;
