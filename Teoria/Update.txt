@@ -1,0 +1,8 @@
+# Sintaxe base
+
+UPDATE NomeTabela
+SET Coluna1 = Valor1
+WHERE Condicao;
+
+# Para o que serve?
+O nome é autoexplicativo. O Update serve para atualizar campos de uma tabela como um todo ou com condições específicas.

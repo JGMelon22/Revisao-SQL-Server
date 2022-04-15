@@ -1,0 +1,8 @@
+-- Alter table
+* O que faz? Altera a estrutura de uma tabela.
+
+-- Alguns exemplosa:
+* Adiciona, remove ou altera uma coluna;
+* Seta valores padrões para uma coluna;
+* Adiciona ou remove restrições de uma coluna;
+* Renome uma tabela.
